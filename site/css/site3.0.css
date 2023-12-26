@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    color: #00081b;
+}
+html {
+    overflow-x: hidden;
+}
+header {
+    background: url("jaw7.jpg");
+    background-size: cover;
+    height: 825px;
+    animation: transitionIn 1.5s;
+}
+.container {
+    background-color: #00081b;
+}
+nav a {
+    color: white;
+}
+.rapstylo {
+    display: flex;
+    align-items: flex-start;
+    width: 414px;
+    font-size: 2em;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    font-size: 1em;
+    margin-bottom: 4px;
+    padding-top: 20px;
+}
+.interactive>a{
+    position: relative;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+    transition: all 1s; 
+}
+
+.interactive>a:hover{ 
+    color: #586F8C;
+    font-size: 1em;
+}
+
+.interactive>a::before{ 
+    position: absolute;
+    width: 0%;
+    height: 1vh;
+    bottom: -1.5vh;
+    left: 0;
+    content: "";
+    background-color: #586F8C;
+    border-radius: 10px;
+    transition : all 0.5s;
+}
+
+.interactive>a:hover::before{
+    width: 100%;
+}
+.interactive {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    width: 700px;
+    align-items: flex-start;
+    justify-content: space-around;
+    font-size: 1.5em;
+}
+nav .menu {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 200px;   
+}
+.titre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    font-size: 2.5em;
+    color: white;
+}
+p {
+    font-size: 0.6em;
+}
+.infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    font-size: 2em;
+    color: white;
+    margin-top: 100px;
+    margin-left: 37vw;
+    max-width: 350px;
+    text-align: center;
+    font-size: 1.5em;
+}
+h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 10vw;
+    font-size: 2em;
+}
+.artistes_hauts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.box_malo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 25vw;
+    height: 150px;
+    color: black;
+    margin-top: 3vw;
+    background-color: white;
+    border-radius: 1vw;
+    gap: 1vw;
+    overflow: hidden;
+}
+.image_malo {
+    height: 100%;
+    width: 550px;
+}
+.malo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box_texte {
+    padding: 32px;
+}
+.box_selug {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 25vw;
+    height: 150px;
+    color: black;
+    margin-top: 3vw;
+    margin-left: 20vw;
+    background-color: white;
+    border-radius: 1vw;
+    gap: 1vw;
+    overflow: hidden;
+}
+.image_selug {
+    height: 100%;
+    width: 550px;
+}
+.selug {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.texte_selug {
+    padding: 32px;
+}
+.artistes_bas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.box_dms {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 25vw;
+    height: 150px;
+    color: black;
+    margin-top: 3vw;
+    background-color: white;
+    border-radius: 1vw;
+    gap: 1vw;
+    overflow: hidden;
+}
+.image_dms {
+    height: 100%;
+    width: 550px;
+}
+.dms {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.texte_dms {
+    padding: 32px;
+}
+.box_murphy {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 25vw;
+    height: 150px;
+    color: black;
+    margin-top: 3vw;
+    margin-left: 20vw;
+    background-color: white;
+    border-radius: 1vw;
+    gap: 1vw;
+    overflow: hidden;
+}
+.image_murphy {
+    height: 100%;
+    width: 550px;
+}
+.murphy {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.texte_murphy {
+    padding: 32px;
+}
+.actus_basses {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.box_idrane {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 25vw;
+    height: 150px;
+    color: black;
+    margin-top: 3vw;
+    background-color: white;
+    border-radius: 1vw;
+    gap: 1vw;
+    overflow: hidden;
+}
+.image_idrane {
+    height: 100%;
+    width: 550px;
+}
+.idrane {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.texte_idrane {
+    padding: 32px;
+}
+.box_baby {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 25vw;
+    height: 150px;
+    color: black;
+    margin-top: 3vw;
+    margin-left: 20vw;
+    background-color: white;
+    border-radius: 1vw;
+    gap: 1vw;
+    overflow: hidden;
+}
+.image_baby {
+    height: 100%;
+    width: 550px;
+}
+.baby {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.texte_baby {
+    padding: 32px;
+}
+.image2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #00081b;
+    height: 36px;
+    gap: 2vw;
+    margin-top: 10vw;
+    padding-bottom: 10px;
+}
+nav .menu {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 200px;   
+}
+@media screen and (max-width: 1207px) {
+    nav {
+        gap: 0%;
+        padding: 0;
+        width: 49vw;
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 8px;
+    }
+    nav .menu {
+        display: block;
+    }
+    .interactive {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.318);
+        backdrop-filter: blur(7px);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+    .titre {
+        font-size: 1.5em;
+        height: 77vh;
+    }
+    .infos {
+        margin-left: 34vw;
+    }
+    .texte_baby {
+        padding: 18px;
+    }
+    .texte_selug {
+        padding: 18px;
+    }
+    .texte_dms {
+        padding: 18px;
+    }
+    .texte_murphy {
+        padding: 18px;
+    }
+    .texte_idrane {
+        padding: 18px;
+    }
+    .box_texte {
+        padding: 18px;
+    }
+}   
+.mobile-menu{
+    margin-left: 0;
+}
+@media screen and (max-width: 900px) {
+    header {
+        height: 650px;
+    }
+    .titre {
+        font-size: 1.2em;
+    }
+    .infos {
+        margin-left: 30vw;
+        font-size: 1.2em;
+    }
+    .box_malo {
+        width: 41vw;
+        height: 85px;
+    }
+    .image_malo {
+        width: 187px;
+    }
+    .box_texte {
+        width: 50vw;
+        padding: 0;
+    }
+    .actus {
+        font-size: 0.5em;
+    }
+    .box_selug {
+        width: 41vw;
+        height: 85px;
+    }
+    .image_selug {
+        width: 121px;
+    }
+    .texte_selug {
+        width: 56vw;
+        padding: 0;
+    }
+    .box_dms {
+        width: 41vw;
+        height: 85px;
+    }
+    .image_dms {
+        width: 187px;
+    }
+    .texte_dms {
+        width: 50vw;
+        padding: 0;
+    }
+    .box_murphy {
+        width: 41vw;
+        height: 85px;
+    }
+    .image_murphy{
+        width: 121px;
+    }
+    .texte_murphy {
+        width: 56vw;
+        padding: 0;
+    }
+    .box_idrane {
+        width: 41vw;
+        height: 85px;
+    }
+    .image_idrane {
+        width: 187px;
+    }
+    .texte_idrane {
+        width: 50vw;
+        padding: 0;
+    }
+    .box_baby {
+        width: 41vw;
+        height: 85px;
+    }
+    .image_baby {
+        width: 121px;
+    }
+    .texte_baby {
+        width: 56vw;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    header {
+        height: 390px;
+    }
+    .titre {
+        font-size: 0.8em;
+        height: 46vh;
+    }
+    .infos {
+        margin-left: 16vw;
+        font-size: 0.8em;
+        width: 426vw;
+    }
+    .artiste { 
+        width: 100vw;
+        margin-top: 105px;
+    }
+    .image {
+        width: 72vw;
+    }
+    .actus {
+        font-size: 0.4em;
+    }
+}
+@media screen and (max-width: 444px) {
+    header {
+        height: 271px;
+    }
+    nav .menu {
+        width: 140px;
+    }
+    .rapstylo {
+        font-size: 1em;
+    }
+    .titre {
+        font-size: 0.7em;
+        height: 31vh;
+    }
+    .infos {
+        margin-left: 20vw;
+        font-size: 0.8em;
+        margin-top: 21vw;
+        max-width: 60vw;
+    }
+    h3 {
+        font-size: 0.8em;
+    }
+}
+@media screen and (min-height: 741px) {
+    .container {
+        height: 261vh;
+    }
+}
+@media screen and (min-height: 840px) {
+    .container {
+        height: 118vh;
+    }
+}
+@media screen and (min-height: 1000px) {
+    .container {
+        height: 173vh;
+    }
+    .interactive {
+        margin-left: 110%;
+    }
+}
+@media screen and (min-height: 1300px) {
+    .container {
+        height: 200vh;
+    }
+}
+@keyframes transitionIn {
+    from {
+    opacity: 0;
+    transform: rotateX(-10deg)
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}

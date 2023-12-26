@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.box-carousel {
+    position: relative;
+    top: 65px;
+    left: 580px;
+    width: 300px;
+    height: 200px;
+  }
+  
+  #image-carousel1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+html {
+    overflow-x: hidden;
+}
+header {
+    background: url("jaw7.jpg");
+    background-size: cover;
+    height: 825px;
+    animation: transitionIn 1.5s;
+}
+.container {
+    background-color: #00081b;
+    color: white;
+}
+nav a {
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+.interactive>a{
+    position: relative;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+    transition: all 0.5s; 
+}
+
+.interactive>a:hover{ 
+    color: #586F8C;
+    font-size: 1em;
+}
+
+.interactive>a::before{ 
+    position: absolute;
+    width: 0%;
+    height: 1vh;
+    bottom: -1.5vh;
+    left: 0;
+    content: "";
+    background-color: #586F8C;
+    border-radius: 10px;
+    transition : all 1s;
+}
+
+.interactive>a:hover::before{
+    width: 100%;
+}
+.rapstylo {
+    display: flex;
+    align-items: flex-start;
+    width: 414px;
+    font-size: 2em;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    font-size: 1em;
+    margin-bottom: 4px;
+    padding-top: 20px;
+}
+.interactive {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    width: 700px;
+    align-items: flex-start;
+    justify-content: space-around;
+    font-size: 1.5em;
+}
+.titre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    font-size: 2.5em;
+    color: white;
+}
+p {
+    font-size: 0.5em;
+}
+.infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    font-size: 2em;
+    margin-top: 100px;
+    margin-left: 37vw;
+    max-width: 350px;
+    text-align: center;
+    font-size: 1.5em;
+}
+.artiste {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 250px;
+}
+.semaine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 20vw;
+}
+.sunset {
+    width: 40%;
+}
+.image {
+    display: flex;
+    align-items: flex-end;
+    margin-top: -170px;
+}
+h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 10vw;
+    font-size: 2em;
+    margin-right: 3vw;
+}
+.actus_hautes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.box_jul {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 25vw;
+    height: 150px;
+    color: black;
+    margin-top: 3vw;
+    background-color: white;
+    border-radius: 1vw;
+    gap: 1vw;
+    overflow: hidden;
+}
+.image_jul {
+    height: 100%;
+    width: 550px;
+}
+.jul {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box_texte {
+    padding: 10px;
+}
+.box_fababy {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 25vw;
+    height: 150px;
+    color: black;
+    margin-top: 3vw;
+    margin-left: 20vw;
+    background-color: white;
+    border-radius: 1vw;
+    gap: 1vw;
+    overflow: hidden;
+}
+.image_fababy {
+    height: 100%;
+    width: 550px;
+}
+.fababy {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.texte_fababy {
+    padding: 10px;
+}
+.actus_basses {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.box_georgio {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 25vw;
+    height: 150px;
+    color: black;
+    margin-top: 3vw;
+    background-color: white;
+    border-radius: 1vw;
+    gap: 1vw;
+    overflow: hidden;
+}
+.image_georgio {
+    height: 100%;
+    width: 550px;
+}
+.georgio {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.texte_georgio {
+    padding: 10px;
+}
+.box_stony {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 25vw;
+    height: 150px;
+    color: black;
+    margin-top: 3vw;
+    margin-left: 20vw;
+    background-color: white;
+    border-radius: 1vw;
+    gap: 1vw;
+    overflow: hidden;
+}
+.image_stony {
+    height: 100%;
+    width: 550px;
+}
+.stony {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.texte_stony {
+    padding: 10px;
+}
+.image2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #00081b;
+    height: 36px;
+    gap: 2vw;
+    margin-top: 10vw;
+}
+p {
+    font-size: 0.7em;
+}
+nav .menu {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 200px;   
+}
+@media screen and (max-width: 1207px) {
+    nav {
+        gap: 0%;
+        padding: 0;
+        width: 49vw;
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 8px;
+    }
+    nav .menu {
+        display: block;
+    }
+    .interactive {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.318);
+        backdrop-filter: blur(7px);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+    .titre {
+        font-size: 1.5em;
+        height: 77vh;
+    }
+    .infos {
+        margin-left: 34vw;
+        font-size: 0.8em;
+    }
+    .artiste { 
+        width: 100vw;
+        margin-top: 213px;
+    }
+    .semaine {
+        width: 34vw;
+        font-size: 1em;
+        padding-left: 10vw;
+    }
+    .sunset {
+        margin-top: 0vw;
+        width: 40%;
+    }
+    .box_texte {
+        padding: 12px;
+    }
+    .texte_fababy {
+        padding: 12px;
+    }
+    .texte_georgio {
+        padding: 12px;
+    }
+    .texte_stony {
+        padding: 12px;
+    }
+}   
+.mobile-menu{
+    margin-left: 0;
+}
+@media screen and (max-width: 900px) {
+    header {
+        height: 650px;
+    }
+    .titre {
+        font-size: 1.2em;
+    }
+    .infos {
+        margin-left: 30vw;
+        font-size: 1.2em;
+    }
+    .artiste { 
+        width: 100vw;
+        margin-top: 105px;
+    }
+    .semaine {
+        width: 25vw;
+        font-size: 0.7em;
+        padding-left: 10vw;
+    }
+    .sunset {
+        margin-top: 0vw;
+        width: 40%;
+    }
+    .box_jul {
+        width: 41vw;
+        height: 85px;
+    }
+    .image_jul {
+        width: 187px;
+    }
+    .box_texte {
+        width: 50vw;
+        padding: 0;
+    }
+    .actus {
+        font-size: 0.5em;
+    }
+    h4 {
+        font-size: 0.6em;
+    }
+    .box_fababy {
+        width: 41vw;
+        height: 85px;
+    }
+    .image_fababy {
+        width: 121px;
+    }
+    .texte_fababy {
+        width: 56vw;
+        padding: 0;
+    }
+    .box_georgio {
+        width: 41vw;
+        height: 85px;
+    }
+    .image_georgio {
+        width: 187px;
+    }
+    .texte_georgio {
+        width: 50vw;
+        padding: 0;
+    }
+    .box_stony {
+        width: 41vw;
+        height: 85px;
+    }
+    .image_stony{
+        width: 121px;
+    }
+    .texte_stony {
+        width: 56vw;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    header {
+        height: 390px;
+    }
+    .titre {
+        font-size: 0.8em;
+        height: 46vh;
+    }
+    .infos {
+        margin-left: 16vw;
+        font-size: 0.8em;
+        width: 426vw;
+    }
+    .artiste { 
+        width: 100vw;
+        margin-top: 105px;
+    }
+    .semaine {
+        width: 100vw;
+        padding-left: 10vw;
+        font-size: 0.7em;
+    }
+    .image {
+        width: 72vw;
+    }
+    .actus {
+        font-size: 0.3em;
+    }
+    .sunset {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 444px) {
+    header {
+        height: 271px;
+    }
+    nav .menu {
+        width: 140px;
+    }
+    .rapstylo {
+        font-size: 1em;
+    }
+    .titre {
+        font-size: 0.7em;
+        height: 31vh;
+    }
+    .infos {
+        margin-left: 20vw;
+        font-size: 0.8em;
+        margin-top: 21vw;
+        max-width: 60vw;
+    }
+    h3 {
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 350px) {
+    .actus {
+        display: none;
+    }
+}
+@media screen and (min-height: 741px) {
+    .container {
+        height: 295vh;
+    }
+}
+@media screen and (min-height: 840px) {
+    .container {
+        height: 127vh;
+    }
+}
+@media screen and (min-height: 1000px) {
+    .container {
+        height: 190vh;
+    }
+    .interactive {
+        margin-left: 110%;
+    }
+}
+@media screen and (min-height: 1300px) {
+    .container {
+        height: 200vh;
+    }
+}
+@keyframes transitionIn {
+    from {
+    opacity: 0;
+    transform: rotateX(-10deg)
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+.container.light,
+.container.light .image2 {
+    background-color: rgb(224, 224, 224);
+    color: black;
+}
+
+.container.light h3 {
+    color: black;
+}
+
